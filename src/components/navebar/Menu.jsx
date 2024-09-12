@@ -2,7 +2,7 @@ import React from 'react'
 
 function Menu() {
   return (
-    <div>Menu</div>
+    <h4 className='text-xs cursor-pointer'>Menu</h4>
   )
 }
 
