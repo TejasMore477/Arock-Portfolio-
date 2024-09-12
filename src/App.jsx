@@ -1,10 +1,12 @@
 import React from 'react'
 import Navbar from './components/navebar/Navbar'
+import Center from './components/center/Center'
 
 function App() {
   return (
-    <div className='w-full h-screen bg-zinc-800 bg-cneter bg-cover bg-no-repeat bg-hero-image text-white'>
+    <div className='w-full h-screen bg-zinc-800 bg-cover bg-[center_top_45%] bg-no-repeat bg-hero-image text-white leading-none'>
       <Navbar />
+      <Center />
     </div>
   )
 }
