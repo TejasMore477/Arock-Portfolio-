@@ -51,7 +51,7 @@ function MenuRight({OpenMenu, setOpenMenu}) {
       </div>
       <div className='w-full h-[90vh] flex flex-col items-start justify-between px-32'>
         <Logo />
-        <Texts texts={['tejas','more','webdesigner','modern designer']}/>
+        <Texts texts={['about','story','projects','releses']}/>
         <div className='grid grid-cols-2 h-[40%] w-full'>
         {
          Textdata.map((item, index)=>(
