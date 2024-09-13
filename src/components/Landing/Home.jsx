@@ -11,7 +11,7 @@ function Home({OpenMenu,setOpenMenu}) {
       gsap.fromTo(
         backRef.current,
         { backgroundSize: '120%' }, 
-        { backgroundSize: '100%', duration: 2, ease: "power2.out", delay:1.5, } 
+        { backgroundSize: '100%', duration:2.5, ease: "power2.out", delay:1.7, } 
       );
       
   })
