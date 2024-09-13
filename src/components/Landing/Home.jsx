@@ -4,7 +4,7 @@ import Center from '../center/Center'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 
-function Home() {
+function Home({OpenMenu,setOpenMenu}) {
   const backRef = useRef() 
   useGSAP(()=>{
 
@@ -17,7 +17,7 @@ function Home() {
   })
   return (
         <div ref={backRef} className='w-full h-screen bg-cover bg-[center_top_45%] bg-no-repeat bg-hero-image text-white leading-none relative'>
-            <Navbar />
+            <Navbar OpenMenu={OpenMenu} setOpenMenu={setOpenMenu}/>
             <Center />
         </div> 
   )

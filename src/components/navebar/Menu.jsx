@@ -1,8 +1,9 @@
 import React from 'react'
 
-function Menu() {
+function Menu({OpenMenu,setOpenMenu,text='Menu'}) {
+  console.log(OpenMenu, setOpenMenu)
   return (
-    <h4 className='text-xs cursor-pointer'>Menu</h4>
+    <h4 onClick={()=>(setOpenMenu(prev=>!prev))} className='text-xs cursor-pointer'>{text}</h4>
   )
 }
 

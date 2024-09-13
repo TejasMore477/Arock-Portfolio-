@@ -1,10 +1,14 @@
-import React, {useRef} from 'react'
+import React, {useRef, useState} from 'react'
 import LoadentParent from './loading/LoadentParent'
 import Home from './Landing/Home'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
+import MenuPage from './main/MenuPage'
 
 function Mother() {
+
+  const  [OpenMenu, setOpenMenu] =  useState(false)
+
     const pageRef = useRef() 
     const loadRef = useRef() 
     const tl = gsap.timeline()
@@ -24,7 +28,8 @@ function Mother() {
   return (
     <div className='bg-[#111] h-screen overflow-hidden'>
         <div ref={loadRef}><LoadentParent/></div>
-        <div ref={pageRef}> <Home /> </div>
+        <div ref={pageRef}> <Home OpenMenu={OpenMenu} setOpenMenu={setOpenMenu}/> </div>
+        <MenuPage OpenMenu={OpenMenu} setOpenMenu={setOpenMenu}/>
     </div>
   )
 }
