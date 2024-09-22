@@ -22,7 +22,7 @@ function MenuPage({OpenMenu,setOpenMenu}) {
   },[OpenMenu,setOpenMenu])
 
   return (
-    <div ref={page} className='h-screen w-full bg-zinc-900 fixed top-full left-0 z-50 flex p-4'>
+    <div ref={page} className='h-screen w-full bg-zinc-900 fixed top-full left-0 z-50 flex py-4 px-7'>
       <MenuLeft/>
       <MenuRight OpenMenu={OpenMenu} setOpenMenu={setOpenMenu}/>
     </div>

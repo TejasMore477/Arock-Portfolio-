@@ -45,11 +45,11 @@ function MenuRight({OpenMenu, setOpenMenu}) {
   },[anime,setAnime])
 
   return (
-    <div className='w-1/3 h-full text-white flex flex-col gap-7'>
+    <div className='xl:w-1/3 sm:w-[50%] w-full h-full text-white flex flex-col gap-7'>
       <div className='w-full text-end'>
         <Menu OpenMenu={OpenMenu} setOpenMenu={setOpenMenu} text={'Close'}/>
       </div>
-      <div className='w-full h-[90vh] flex flex-col items-start justify-between px-32'>
+      <div className='w-full h-[90vh] flex flex-col sm:items-start justify-between xl:px-32 md:px-20 '>
         <Logo />
         <Texts texts={['about','story','projects','releses']}/>
         <div className='grid grid-cols-2 h-[40%] w-full'>

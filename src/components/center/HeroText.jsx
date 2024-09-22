@@ -25,11 +25,11 @@ function HeroText() {
         <h1 
         key={index}  
         ref={(el) => textRefs.current[index] = el} 
-        className='font-black text-white text-[22vw] tracking-tighter leading-none uppercase'>
+        className='font-black text-white lg:text-[22vw] md:text-[24vw] sm:text-[26vw] text-[26vw] tracking-tighter leading-none uppercase '>
           {letter}
         </h1>
       ))}
-      <span className='text-[4vw] font-bold pt-16 ml-2'>®</span>
+      <span className='text-[4vw] font-bold xl:pt-16 sm:pt-10 pt-5 ml-2'>®</span>
     </div>
   )
 }
