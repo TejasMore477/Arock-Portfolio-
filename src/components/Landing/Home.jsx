@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from 'react';
 import Navbar from '../navebar/Navbar';
 import Center from '../center/Center';
 import gsap from 'gsap';
-import photo1 from '/src/assets/images/center-hero-image.jpg'
+import photo1 from '/src/assets/images/center-hero-image.jpg';
 
 function Home({ OpenMenu, setOpenMenu }) {
   const backRef = useRef();
@@ -10,7 +10,6 @@ function Home({ OpenMenu, setOpenMenu }) {
   useEffect(() => {
     // Create a media query for 'lg' screens (1024px and above)
     const mediaQuery = window.matchMedia("(min-width: 1024px)");
-    console.log(mediaQuery)
 
     const animateBackground = () => {
       gsap.fromTo(
@@ -41,7 +40,12 @@ function Home({ OpenMenu, setOpenMenu }) {
   return (
     <div
       ref={backRef}
-      className={`lg:bg-[#111] w-full h-screen xl:bg-cover bg-cover bg-center bg-no-repeat bg-${photo1} text-white leading-none relative`}
+      style={{
+        backgroundImage: `url(${photo1})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
+      className="lg:bg-[#111] w-full h-screen text-white leading-none relative"
     >
       <Navbar OpenMenu={OpenMenu} setOpenMenu={setOpenMenu} />
       <Center />
