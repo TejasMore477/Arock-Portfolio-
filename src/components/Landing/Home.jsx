@@ -2,6 +2,7 @@ import React, { useRef, useEffect } from 'react';
 import Navbar from '../navebar/Navbar';
 import Center from '../center/Center';
 import gsap from 'gsap';
+import photo1 from '/src/assets/images/center-hero-image.jpg'
 
 function Home({ OpenMenu, setOpenMenu }) {
   const backRef = useRef();
@@ -40,7 +41,7 @@ function Home({ OpenMenu, setOpenMenu }) {
   return (
     <div
       ref={backRef}
-      className="lg:bg-[#111] w-full h-screen xl:bg-cover bg-cover lg:bg-[center_top_45%] bg-center bg-no-repeat bg-hero-image text-white leading-none relative"
+      className={`lg:bg-[#111] w-full h-screen xl:bg-cover bg-cover lg:bg-[${photo1}] bg-center bg-no-repeat bg-hero-image text-white leading-none relative`}
     >
       <Navbar OpenMenu={OpenMenu} setOpenMenu={setOpenMenu} />
       <Center />
