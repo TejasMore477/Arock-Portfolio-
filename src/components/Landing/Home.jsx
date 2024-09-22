@@ -41,7 +41,7 @@ function Home({ OpenMenu, setOpenMenu }) {
   return (
     <div
       ref={backRef}
-      className={`lg:bg-[#111] w-full h-screen xl:bg-cover bg-cover lg:bg-[${photo1}] bg-center bg-no-repeat bg-hero-image text-white leading-none relative`}
+      className={`lg:bg-[#111] w-full h-screen xl:bg-cover bg-cover lg:bg-${photo1} bg-center bg-no-repeat bg-hero-image text-white leading-none relative`}
     >
       <Navbar OpenMenu={OpenMenu} setOpenMenu={setOpenMenu} />
       <Center />
